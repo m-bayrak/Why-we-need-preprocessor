@@ -1,10 +1,13 @@
+$cell-size: 100px;
+
 .game {
-  --player-size: calc(0.8 * 100px);
+  --player-size: calc(0.8 * #{$cell-size});
   --shift: calc(
-    (100px - var(--player-size)) / 2
+    (#{$cell-size} - var(--player-size)) / 2
   );
+
   position: relative;
-  width: calc(3 * 100px);
+  width: calc(3 * #{$cell-size});
   border: 2px solid #000;
 }
 
@@ -15,8 +18,8 @@
 
 .game__cell {
   box-sizing: border-box;
-  height: 100px;
-  width: 100px;
+  height: #{$cell-size};
+  width: #{$cell-size};
   border: 1px dashed #000;
 }
 
@@ -24,6 +27,7 @@
   position: absolute;
   top: var(--shift);
   left: var(--shift);
+
   height: var(--player-size);
   width: var(--player-size);
   background-color: #000;
@@ -35,11 +39,11 @@
 }
 
 .game__player--y--2 {
-  top: calc(100px + var(--shift));
+  top: calc(#{$cell-size} + var(--shift))
 }
 
 .game__player--y--3 {
-  top: calc(2 * 100px + var(--shift));
+  top: calc(2 * #{$cell-size} + var(--shift))
 }
 
 .game__player--x--1 {
@@ -47,23 +51,21 @@
 }
 
 .game__player--x--2 {
-  left: calc(100px + var(--shift));
+  left: calc(#{$cell-size} + var(--shift))
 }
 
 .game__player--x--3 {
-  left: calc(2 * 100px + var(--shift));
+  left: calc(2 * #{$cell-size} + var(--shift))
 }
 
 .game__player--color--red {
-  background-color: red;
+  background-color:red;
 }
 
 .game__player--color--green {
-  background-color: green;
+  background-color:green;
 }
 
 .game__player--color--blue {
-  background-color: blue;
+  background-color:blue;
 }
-
-/*# sourceMappingURL=style.css.map */
