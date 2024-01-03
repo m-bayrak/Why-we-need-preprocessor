@@ -1,10 +1,6 @@
 .game {
-  --player-size: calc(0.8 * 100px);
-  --shift: calc(
-    (100px - var(--player-size)) / 2
-  );
   position: relative;
-  width: calc(3 * 100px);
+  width: 300px;
   border: 2px solid #000;
 }
 
@@ -22,36 +18,36 @@
 
 .game__player {
   position: absolute;
-  top: var(--shift);
-  left: var(--shift);
-  height: var(--player-size);
-  width: var(--player-size);
+  top: 10px;
+  left: 10px;
+  height: 80px;
+  width: 80px;
   background-color: #000;
   border-radius: 50%;
 }
 
 .game__player--y--1 {
-  top: var(--shift);
+  top: 10px;
 }
 
 .game__player--y--2 {
-  top: calc(100px + var(--shift));
+  top: 110px;
 }
 
 .game__player--y--3 {
-  top: calc(2 * 100px + var(--shift));
+  top: 210px;
 }
 
 .game__player--x--1 {
-  left: var(--shift);
+  left: 10px;
 }
 
 .game__player--x--2 {
-  left: calc(100px + var(--shift));
+  left: 110px;
 }
 
 .game__player--x--3 {
-  left: calc(2 * 100px + var(--shift));
+  left: 210px;
 }
 
 .game__player--color--red {
