@@ -29,16 +29,16 @@ $shift: ($cell-size - $player-size) / 2;
     background-color: #000;
     border-radius: 50%;
     
-    &--y--1 {
-      top: $shift;
+    @for $row from 1 through 3 {
+      &--y--#{$row} {
+        top: ($row - 1) * $cell-size +$shift
+      }
     }
-    
-    &--y--2 {
-      top: $cell-size + $shift;
-    }
-    
-    &--y--3 {
-      top: 2 * $cell-size + $shift;
+
+    @for $column from 1 through 3 {
+      &--x--#{$column} {
+        left: ($column - 1) * $cell-size +$shift
+      }
     }
     
     &--x--1 {

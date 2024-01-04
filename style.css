@@ -40,6 +40,15 @@
 .game__player--x--3 {
   left: 210px;
 }
+.game__player--x--1 {
+  left: 10px;
+}
+.game__player--x--2 {
+  left: 110px;
+}
+.game__player--x--3 {
+  left: 210px;
+}
 .game__player--color--red {
   background-color: red;
 }
