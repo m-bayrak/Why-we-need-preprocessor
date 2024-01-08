@@ -1,6 +1,6 @@
 .game {
   position: relative;
-  width: 300px;
+  width: 400px;
   border: 2px solid #000;
 }
 .game__field {
@@ -40,23 +40,20 @@
 .game__player--x--3 {
   left: 210px;
 }
-.game__player--x--1 {
-  left: 10px;
-}
-.game__player--x--2 {
-  left: 110px;
-}
-.game__player--x--3 {
-  left: 210px;
+.game__player--x--4 {
+  left: 310px;
 }
 .game__player--color--red {
-  background-color: red;
+  background-color: #f00;
 }
 .game__player--color--green {
-  background-color: green;
+  background-color: #080;
 }
 .game__player--color--blue {
-  background-color: blue;
+  background-color: #00f;
+}
+.game__player--color--yellow {
+  background-color: #ff0;
 }
 
 /*# sourceMappingURL=style.css.map */
